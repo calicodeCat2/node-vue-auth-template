@@ -22,13 +22,13 @@ export default new Vuex.Store({
       }
   },
   actions: {
-    // registerUser({ commit }, newUser) {
-    //   axios
-    //     .post("http://localhost:8000/register", 
-    //     newUser)
-    //     .then(res => console.log('register', data))
-    //     .catch(error => console.error(error))
-    // }
+    registerUser({ commit }, newUser) {
+      axios
+        .post("http://localhost:8000/register", 
+        newUser)
+        .then(res => console.log('register', data))
+        .catch(error => console.error(error))
+    }
   },
     loginUser({commit}, user) {
        axios

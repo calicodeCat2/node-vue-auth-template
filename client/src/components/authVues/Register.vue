@@ -77,7 +77,8 @@ export default {
         password: this.password
       }
       console.log(newUser);
-      this.$store.dispatch('registerUser', { newUser }).then(() => {
+      this.$store.dispatch('registerUser', { newUser })
+      .then(() => {
         this.$router.push('/login')
       })
   },
